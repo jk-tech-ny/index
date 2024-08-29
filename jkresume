@@ -5,16 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John King - Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        header a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        .job, .technical-expertise, .operating-systems, .software, .hardware {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>John King</h1>
-        <p>Hopewell Junction, NY | 845-656-7568 | <a href="mailto:john@kingtechny.com">john@kingtechny.com</a> | <a href="https://linkedin.com/in/johnking">LinkedIn</a></p>
+        <p>
+            New York Metro Area | 845-656-7568 | 
+            <a href="mailto:john@kingtechny.com">john@kingtechny.com</a> | 
+            <a href="https://linkedin.com/in/johnking">LinkedIn</a>
+        </p>
     </header>
 
     <section class="summary">
         <h2>Professional Summary</h2>
-        <p>Systems Administrator and Technical Support Specialist with more than 15 years of experience developing, deploying, and administering enterprise IT infrastructures and networks. Supports the planning, implementation, and administration of enterprise IT solutions, systems, and processes focused on maximizing business and system performance. Professional strengths include excellent skills in project planning, network administration, solution delivery, technical support, and customer service. Currently seeking roles in Systems Administration.</p>
+        <p>
+            Systems Administrator and Technical Support Specialist with more than 15 years of experience developing, deploying, and administering enterprise IT infrastructures and networks. Supports the planning, implementation, and administration of enterprise IT solutions, systems, and processes focused on maximizing business and system performance. Professional strengths include excellent skills in project planning, network administration, solution delivery, technical support, and customer service. Currently seeking roles in Systems Administration.
+        </p>
     </section>
 
     <section class="achievements">
@@ -34,9 +111,9 @@
         <div class="job">
             <h3>Quantcast - IT Services Administrator (2021 - 2024)</h3>
             <ul>
-                <li>Lead roll out and become the primary system owner for JAMF Pro, JAMF Connect and JAMF Protect on all company macOS and iOS devices.</li>
+                <li>Lead roll out and become the primary system owner for JAMF Pro, JAMF Connect, and JAMF Protect on all company macOS and iOS devices.</li>
                 <li>Assisted with the roll out of Windows 11 to company Windows laptops.</li>
-                <li>Alternated as Primary for global office moves including Chicago, Toronto, Dublin and Sydney.</li>
+                <li>Alternated as Primary for global office moves including Chicago, Toronto, Dublin, and Sydney.</li>
                 <li>Primary for non-production Linux system patching and Backup for Production patching.</li>
                 <li>Developed training paths and documentation for all service desk staff for IT procedures and best practices.</li>
             </ul>
@@ -61,15 +138,16 @@
         </div>
         <div class="operating-systems">
             <h3>Operating Systems</h3>
-            <p>Windows Server 2012 – 2022, Windows 11/10/7, Mac OS, Linux Ubuntu, Fedora Linux, VMware ESXi, AmazonLinux 2/2023</p>
+            <p>Windows Server 2012 – 2022, Windows 11/10/7, Mac OS, Linux Ubuntu, Fedora Linux, VMware ESXi, Amazon Linux 2/2023</p>
         </div> 
         <div class="software"> 
             <h3>Software</h3> 
             <p>Okta/SAML, Okta Workflows, Terraform, Github, JAMF Pro, JAMF Protect, JAMF Connect, Microsoft Intune, Microsoft Exchange, Microsoft Active Directory, VMWare AirWatch, Docker, Ansible, AWS, ControlUp, Remedy, Office 365, ScreenConnect, Apple Business Manager, Team Viewer, Log Me In, Atlassian, Azure, MECM, SCCM</p>
         </div> 
         <div class="hardware"> 
-        <h3>Hardware</h3> <p>Dell & HP Servers, Network Switches, Routers (Cisco/Juniper), PC Desktop/Laptops, Apple Desktop/Laptops/Phones/Tablets, Android Phones/Tablets, Video Conferencing Solutions</p> 
-    </div>
-  </section>
+            <h3>Hardware</h3>
+            <p>Dell & HP Servers, Network Switches, Routers (Cisco/Juniper), PC Desktop/Laptops, Apple Desktop/Laptops/Phones/Tablets, Android Phones/Tablets, Video Conferencing Solutions</p>
+        </div>
+    </section>
 </body>
 </html>
