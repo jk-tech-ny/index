@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John King - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>John King</h1>
+        <p>Hopewell Junction, NY | 845-656-7568 | <a href="mailto:john@kingtechny.com">john@kingtechny.com</a> | <a href="https://linkedin.com/in/johnking">LinkedIn</a></p>
+    </header>
+
+    <section class="summary">
+        <h2>Professional Summary</h2>
+        <p>Systems Administrator and Technical Support Specialist with more than 15 years of experience developing, deploying, and administering enterprise IT infrastructures and networks. Supports the planning, implementation, and administration of enterprise IT solutions, systems, and processes focused on maximizing business and system performance. Professional strengths include excellent skills in project planning, network administration, solution delivery, technical support, and customer service. Currently seeking roles in Systems Administration.</p>
+    </section>
+
+    <section class="achievements">
+        <h2>Professional Achievements</h2>
+        <ul>
+            <li>Managed diverse IT projects to implement and support new user-facing technologies that drove operational performance improvements, advancements in IT support, and stronger alignment of IT to business strategies.</li>
+            <li>Led the build-out of and was primary system owner of a full Endpoint Detection & Response solution as well as the primary MDM solution for the macOS and iOS fleet at Quantcast.</li>
+            <li>Directed multiple migration initiatives to move IT infrastructures, applications, and processes from legacy on-premises environments to new virtual platforms running on VMware.</li>
+            <li>Oversaw the implementation of a new mobile device management solution at Quantcast; developed a fully managed and secure device management process for an entire fleet of Mac and iOS devices, as well as providing global capabilities for drop-shipping computers and automating computer imaging.</li>
+            <li>Led the build-out of a full internal company AppStore at Quantcast, providing self-service application selection and installation capabilities for all mobile users.</li>
+            <li>Supervised the migration of existing mobile phones at Hytorc from AirWatch to Microsoft Intune, accomplishing all project deliverables without needing to default any devices -- completed all phases of the project three weeks ahead of schedule.</li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <h3>Quantcast - IT Services Administrator (2021 - 2024)</h3>
+            <ul>
+                <li>Lead roll out and become the primary system owner for JAMF Pro, JAMF Connect and JAMF Protect on all company macOS and iOS devices.</li>
+                <li>Assisted with the roll out of Windows 11 to company Windows laptops.</li>
+                <li>Alternated as Primary for global office moves including Chicago, Toronto, Dublin and Sydney.</li>
+                <li>Primary for non-production Linux system patching and Backup for Production patching.</li>
+                <li>Developed training paths and documentation for all service desk staff for IT procedures and best practices.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Hytorc - Senior Systems Administrator (2020 - 2021)</h3>
+            <ul>
+                <li>Manage the implementation and support of IT systems, including physical and virtual servers, networked clients, and peripheral devices; perform all aspects of enterprise IT implementation, configuration, testing, and deployment to production environments.</li>
+                <li>Collaborate with all levels of business teams to define operational requirements and deliver IT solutions according to immediate and evolving business needs.</li>
+                <li>Plan and lead many projects focused on improving business performance and user experiences by implementing new virtualized IT infrastructures, Office 365 productivity software, mobile device management (MDM) via a Microsoft Intune portal, and other platforms as required.</li>
+                <li>Develop support documentation for many systems and processes, creating a strong knowledgebase for technology management and user support activities.</li>
+            </ul>
+        </div>
+        <!-- Add other job experiences here -->
+    </section>
+
+    <section class="skills">
+        <h2>Skills & Expertise</h2>
+        <div class="technical-expertise">
+            <h3>Technical Expertise</h3>
+            <p>Systems Administration, Systems Engineering, Project Management, Vendor Management, Technical Support, Technology Research, IT Systems Analysis</p>
+        </div>
+        <div class="operating-systems">
+            <h3>Operating Systems</h3>
+            <p>Windows Server 2012 – 2022, Windows 11/10/7, Mac OS, Linux Ubuntu, Fedora Linux, VMware ESXi, AmazonLinux 2/2023</p>
+        </div> 
+        <div class="software"> 
+            <h3>Software</h3> 
+            <p>Okta/SAML, Okta Workflows, Terraform, Github, JAMF Pro, JAMF Protect, JAMF Connect, Microsoft Intune, Microsoft Exchange, Microsoft Active Directory, VMWare AirWatch, Docker, Ansible, AWS, ControlUp, Remedy, Office 365, ScreenConnect, Apple Business Manager, Team Viewer, Log Me In, Atlassian, Azure, MECM, SCCM</p>
+        </div> 
+        <div class="hardware"> 
+        <h3>Hardware</h3> <p>Dell & HP Servers, Network Switches, Routers (Cisco/Juniper), PC Desktop/Laptops, Apple Desktop/Laptops/Phones/Tablets, Android Phones/Tablets, Video Conferencing Solutions</p> 
+    </div>
+  </section>
+</body>
+</html>
