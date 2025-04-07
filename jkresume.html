@@ -1,153 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John King - Resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Reset some default browser styles */
-        body, h1, h2, h3, p, ul {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.2em;
-        }
-
-        header p {
-            font-size: 1.2em;
-            color: #555;
-        }
-
-        header a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-
-        header a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-
-        h2 {
-            border-bottom: 2px solid #000;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-            font-size: 1.8em;
-        }
-
-        .job, .technical-expertise, .operating-systems, .software, .hardware {
-            margin-bottom: 15px;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 5px;
-        }
-
-        p {
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John King Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+    }
+    h3 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .job-title {
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    .contact {
+      margin-bottom: 10px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>John King</h1>
-        <p>
-            New York Metro Area | 845-656-7568 | 
-            <a href="mailto:john@kingtechny.com">john@kingtechny.com</a> | 
-            <a href="https://linkedin.com/in/johnking">LinkedIn</a>
-        </p>
-    </header>
 
-    <section class="summary">
-        <h2>Professional Summary</h2>
-        <p>
-            Systems Administrator and Technical Support Specialist with more than 15 years of experience developing, deploying, and administering enterprise IT infrastructures and networks. Supports the planning, implementation, and administration of enterprise IT solutions, systems, and processes focused on maximizing business and system performance. Professional strengths include excellent skills in project planning, network administration, solution delivery, technical support, and customer service. Currently seeking roles in Systems Administration.
-        </p>
-    </section>
+  <h1>John King</h1>
+  <div class="contact">
+    Hopewell Junction, NY · 845-656-7568 · <a href="mailto:john@kingtechny.com">john@kingtechny.com</a> · 
+    <a href="https://www.linkedin.com/in/johnking82" target="_blank">linkedin.com/in/johnking82</a>
+  </div>
 
-    <section class="achievements">
-        <h2>Professional Achievements</h2>
-        <ul>
-            <li>Managed diverse IT projects to implement and support new user-facing technologies that drove operational performance improvements, advancements in IT support, and stronger alignment of IT to business strategies.</li>
-            <li>Led the build-out of and was primary system owner of a full Endpoint Detection & Response solution as well as the primary MDM solution for the macOS and iOS fleet at Quantcast.</li>
-            <li>Directed multiple migration initiatives to move IT infrastructures, applications, and processes from legacy on-premises environments to new virtual platforms running on VMware.</li>
-            <li>Oversaw the implementation of a new mobile device management solution at Quantcast; developed a fully managed and secure device management process for an entire fleet of Mac and iOS devices, as well as providing global capabilities for drop-shipping computers and automating computer imaging.</li>
-            <li>Led the build-out of a full internal company AppStore at Quantcast, providing self-service application selection and installation capabilities for all mobile users.</li>
-            <li>Supervised the migration of existing mobile phones at Hytorc from AirWatch to Microsoft Intune, accomplishing all project deliverables without needing to default any devices -- completed all phases of the project three weeks ahead of schedule.</li>
-        </ul>
-    </section>
+  <h2>Summary</h2>
+  <p><strong>Senior Systems Administrator & IT Operations Engineer</strong> with 15+ years of experience designing, deploying, and optimizing enterprise IT infrastructures and endpoint security at scale. Proven success managing global rollouts, system migrations, mobile device management, and infrastructure automation using tools such as <strong>Jamf, Intune, Okta, Ansible, Terraform, and Docker</strong>.</p>
+  <p>Career highlights include reducing laptop deployment time by 50%, implementing global macOS security protections, and leading infrastructure modernization projects across hybrid and remote environments. Adept at aligning IT strategies with business goals and mentoring teams through system transformation initiatives.</p>
 
-    <section class="experience">
-        <h2>Professional Experience</h2>
-        <div class="job">
-            <h3>Quantcast - IT Services Administrator (2021 - 2024)</h3>
-            <ul>
-                <li>Lead roll out and become the primary system owner for JAMF Pro, JAMF Connect, and JAMF Protect on all company macOS and iOS devices.</li>
-                <li>Assisted with the roll out of Windows 11 to company Windows laptops.</li>
-                <li>Alternated as Primary for global office moves including Chicago, Toronto, Dublin, and Sydney.</li>
-                <li>Primary for non-production Linux system patching and Backup for Production patching.</li>
-                <li>Developed training paths and documentation for all service desk staff for IT procedures and best practices.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>Hytorc - Senior Systems Administrator (2020 - 2021)</h3>
-            <ul>
-                <li>Manage the implementation and support of IT systems, including physical and virtual servers, networked clients, and peripheral devices; perform all aspects of enterprise IT implementation, configuration, testing, and deployment to production environments.</li>
-                <li>Collaborate with all levels of business teams to define operational requirements and deliver IT solutions according to immediate and evolving business needs.</li>
-                <li>Plan and lead many projects focused on improving business performance and user experiences by implementing new virtualized IT infrastructures, Office 365 productivity software, mobile device management (MDM) via a Microsoft Intune portal, and other platforms as required.</li>
-                <li>Develop support documentation for many systems and processes, creating a strong knowledgebase for technology management and user support activities.</li>
-            </ul>
-        </div>
-        <!-- Add other job experiences here -->
-    </section>
+  <h2>Skills & Expertise</h2>
+  <div class="skills-grid">
+    <div><strong>Technical Expertise:</strong> Systems Administration, Endpoint Security, MDM, Automation</div>
+    <div><strong>Tools:</strong> Jamf Pro, Intune, Okta, Entra ID, Office 365, Remedy</div>
+    <div><strong>Cloud/Infra:</strong> Azure, Terraform, Docker, Ansible, VMware ESXi</div>
+    <div><strong>OS:</strong> Windows Server, macOS, Linux (Ubuntu)</div>
+    <div><strong>Hardware:</strong> Dell/HP Servers, Apple & Android Devices</div>
+    <div><strong>Scripting:</strong> Bash, PowerShell, Git, Okta Workflows</div>
+  </div>
 
-    <section class="skills">
-        <h2>Skills & Expertise</h2>
-        <div class="technical-expertise">
-            <h3>Technical Expertise</h3>
-            <p>Systems Administration, Systems Engineering, Project Management, Vendor Management, Technical Support, Technology Research, IT Systems Analysis</p>
-        </div>
-        <div class="operating-systems">
-            <h3>Operating Systems</h3>
-            <p>Windows Server 2012 – 2022, Windows 11/10/7, Mac OS, Linux Ubuntu, Fedora Linux, VMware ESXi, Amazon Linux 2/2023</p>
-        </div> 
-        <div class="software"> 
-            <h3>Software</h3> 
-            <p>Okta/SAML, Okta Workflows, Terraform, Github, JAMF Pro, JAMF Protect, JAMF Connect, Microsoft Intune, Microsoft Exchange, Microsoft Active Directory, VMWare AirWatch, Docker, Ansible, AWS, ControlUp, Remedy, Office 365, ScreenConnect, Apple Business Manager, Team Viewer, Log Me In, Atlassian, Azure, MECM, SCCM</p>
-        </div> 
-        <div class="hardware"> 
-            <h3>Hardware</h3>
-            <p>Dell & HP Servers, Network Switches, Routers (Cisco/Juniper), PC Desktop/Laptops, Apple Desktop/Laptops/Phones/Tablets, Android Phones/Tablets, Video Conferencing Solutions</p>
-        </div>
-    </section>
+  <h2>Professional Experience</h2>
+
+  <h3>Quantcast – Senior IT Services Administrator (2021 – 2024)</h3>
+  <ul>
+    <li>Led Jamf Pro and Protect rollout and Workspace One migration, reducing laptop deployment time by 50%.</li>
+    <li>Managed deployments for 500+ global users; optimized endpoint performance and uptime.</li>
+    <li>Achieved 100% patch compliance for Linux systems using Terraform, Ansible, and Docker.</li>
+    <li>Built Okta automation workflows for user lifecycle management.</li>
+    <li>Implemented macOS Endpoint Protection, reducing security incidents by 20%.</li>
+  </ul>
+
+  <h3>HYTORC – Senior Systems Administrator (2020 – 2021)</h3>
+  <ul>
+    <li>Led Office 365 rollout for 1000+ users and deployed Intune-based MDM for 600+ devices.</li>
+    <li>Delivered IT infrastructure upgrades and documentation for enterprise-wide tech enablement.</li>
+  </ul>
+
+  <h3>Quantcast – Senior IT Services Administrator (2016 – 2020)</h3>
+  <ul>
+    <li>Managed global IT system rollouts across US, Europe, and Australia.</li>
+    <li>Oversaw hardware refreshes, security software deployments, and A/V infrastructure upgrades.</li>
+    <li>Negotiated enterprise mobile plans and managed device lifecycles with Verizon and AT&T.</li>
+  </ul>
+
+  <h3>HDR, INC. – Senior IT Support Specialist (2013 – 2016)</h3>
+  <ul>
+    <li>Supported 100+ users across multiple regional offices and the Tappan Zee Bridge design team.</li>
+    <li>Managed PC lifecycle, device provisioning, and evaluated enterprise device solutions.</li>
+  </ul>
+
+  <h3>Early Career</h3>
+  <ul>
+    <li><strong>Time, Inc.</strong> – Desktop Support Specialist (2012 – 2013)</li>
+    <li><strong>Eileen Fisher</strong> – Mac / PC Support Specialist (2011 – 2012)</li>
+    <li><strong>Regeneron Pharmaceuticals</strong> – IS Support Specialist II (2008 – 2011)</li>
+  </ul>
+
+  <h2>Certifications</h2>
+  <ul>
+    <li>Certified Scrum Master (Renewing)</li>
+    <li>Amazon Certified Cloud Practitioner (In Progress)</li>
+    <li>Jamf 200 (In Progress)</li>
+  </ul>
+
 </body>
 </html>
