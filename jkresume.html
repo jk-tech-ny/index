@@ -1,149 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John King - Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      color: #333;
-      background-color: #f7f7f7;
-    }
-
-    h1, h2, h3 {
-      color: #004080;
-    }
-
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .header h1 {
-      margin-bottom: 5px;
-    }
-
-    .header a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    .section {
-      margin-bottom: 30px;
-    }
-
-    .section h2 {
-      border-bottom: 2px solid #004080;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-
-    .job-title {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    .date {
-      font-style: italic;
-      color: #777;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>John King - Resume</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  color: #333;
+  background-color: #f7f7f7;
+}
+h1, h2, h3 {
+  color: #004080;
+}
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header h1 {
+  margin-bottom: 5px;
+}
+.header a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.section {
+  margin-bottom: 30px;
+}
+.section h2 {
+  border-bottom: 2px solid #004080;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.job-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.job-sub {
+  font-weight: bold;
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.date {
+  font-style: italic;
+  color: #777;
+}
+ul {
+  padding-left: 20px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 <body>
-  <div class="header">
-    <h1>John King</h1>
-    <p> NY | ***-***-**** | <a href="mailto:john@kingtechny.com">john@kingtechny.com</a></p>
-    <p><a href="https://www.linkedin.com/in/johnking82/">LinkedIn: johnking82</a></p>
-    <h3>IT Systems Administration | Systems Engineering | IT Operations</h3>
+
+<div class="header">
+  <h1>John King</h1>
+  <p>Dutchess County, NY | ***-***-**** | <a href="mailto:john@kingtechny.com">john@kingtechny.com</a></p>
+  <p><a href="https://www.linkedin.com/in/johnking82/">LinkedIn: johnking82</a></p>
+  <h3>IT Operations &amp; Automation Leadership | Identity Management | AI-Assisted Tooling</h3>
+</div>
+
+<div class="section">
+  <h2>Professional Summary</h2>
+  <p>Senior IT administrator with 15+ years of experience leading enterprise identity management, endpoint security, and IT operations across pre-IPO and growth-stage technology companies. Over the past two years, has shifted focus toward AI-assisted internal tooling &mdash; designing and deploying production automation using Python, FastMCP, and Claude Code to reduce manual IT workflows and reclaim SaaS spend. Deep hands-on expertise across Okta, Jamf Pro, Microsoft Intune/Entra ID, Jira Service Management, and GitHub Enterprise, paired with a decade of sole-IT-lead experience delivering deskside support, AV operations, and office buildouts. Comfortable operating independently in sprint-based environments without day-to-day management oversight.</p>
+</div>
+
+<div class="section">
+  <h2>Core Competencies</h2>
+  <ul>
+    <li><strong>Identity &amp; Access:</strong> Okta Administration (SSO, Provisioning, Lifecycle, Workflows), Okta MCP/API tooling, Entra ID, GitHub Enterprise (org &amp; SSO administration)</li>
+    <li><strong>Endpoint &amp; Mobile Security:</strong> Jamf Pro, Jamf Protect, Microsoft Intune (MDM/MAM), Conditional Access, Workspace One</li>
+    <li><strong>Automation &amp; AI Tooling:</strong> Claude Code, Python, FastMCP, PowerShell, Ansible, Google Cloud Run</li>
+    <li><strong>ITSM &amp; Collaboration:</strong> Jira Service Management (Admin/Automation), Confluence, Google Workspace, Slack, Zoom/AV Systems</li>
+    <li><strong>Compliance &amp; Security:</strong> SOC 2 Type II Evidence Collection, ITIL Practices, Endpoint Compliance Policy</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Professional Experience</h2>
+
+  <div class="job-title">HOVER &mdash; Senior IT Administrator II <span class="date">(2024 &ndash; Present)</span></div>
+  <div class="job-sub">Identity, Automation &amp; AI Tooling</div>
+  <ul>
+    <li>Architected and deployed a production Okta MCP server (Python/FastMCP, Google Cloud Run) exposing Okta identity data through AI-assistant-callable tools, enabling natural-language auditing of provisioning, licensing, and group structure.</li>
+    <li>Built end-to-end new-hire onboarding automation (Project Lightbulb) integrating BambooHR via webhooks to auto-generate and route onboarding tickets across Jira Service Management, with location-based assignment logic distributing work to the correct team.</li>
+    <li>Developed role-based ticket generation for new engineering hires, automatically provisioning software access requests based on role/department against an approval matrix &mdash; eliminating manual new-hire access requests.</li>
+    <li>Led IT-side evidence collection for SOC 2 Type II audits &mdash; compiling access reviews, system logs, and configuration screenshots across Okta, Jamf, and Intune to satisfy control requirements ahead of auditor deadlines.</li>
+    <li>Investigated Okta BPO group architecture, mapping a universal marker group and five role-based groups tied to a dedicated Okta Workflow, and documented tooling failure modes for future maintainers.</li>
+    <li>Built HoverTime, an internal calendar-optimization platform (FastAPI/React) to replace a decommissioned scheduling tool &mdash; architecting Google Calendar OAuth with domain-wide delegation, Slack status sync, and automated focus-time blocking.</li>
+    <li>Built and iterated on Jira automation rules for new-hire onboarding ticket routing and conducted a gap analysis identifying 17 frequently-requested applications missing from the onboarding intake form.</li>
+  </ul>
+  <div class="job-sub">Endpoint Management &amp; Mobile Security (Intune / Entra ID / Jamf)</div>
+  <ul>
+    <li>Diagnosed and resolved Android MAM enrollment failures for Hover's internal LOB app, covering Samsung Knox attestation blocking, Company Portal broker requirements, and Intune App SDK integration.</li>
+    <li>Designed and deployed a MAM-based Conditional Access policy in Entra ID (iOS and Android) enforcing app protection without requiring full device enrollment, balancing security posture with BYOD usability.</li>
+    <li>Authored internal Confluence runbooks documenting Intune App Protection Policy configuration for the broader IT team.</li>
+    <li>Built cross-platform RTO attendance reporting infrastructure reconciling Meraki Wi-Fi association logs, Jamf inventory, and Google Sheets attendance data across NY and SF offices, including false-positive filtering for parked devices.</li>
+    <li>Designed and deployed an automated interview-laptop reset workflow (LaunchAgent + bash) clearing AI assistant application data and restoring standardized interview assets, with Jamf/PPPC deployment planning.</li>
+  </ul>
+  <div class="job-sub">GitHub Enterprise &amp; Systems Integration</div>
+  <ul>
+    <li>Provisioned and configured a machine-user account for GitHub Enterprise&ndash;Jira integration, resolving SSH commit signing, SAML SSO authorization, and org-level repository permissions.</li>
+  </ul>
+  <div class="job-sub">Operations, Reporting &amp; Directory Management</div>
+  <ul>
+    <li>Conducted a 140-license New Relic access review via custom Okta tooling, identifying 45 dormant accounts and a licensed-but-suspended user, directly informing license reclamation.</li>
+    <li>Automated PagerDuty license reclamation by cross-referencing inactive users against Okta sign-in data.</li>
+    <li>Produced a unified 498-record employee/non-employee directory via three-way reconciliation of Okta, HR, and legacy data sources, including manager-flagging for departed managers.</li>
+    <li>Managed the NY office IT satisfaction survey, translating open-ended employee feedback into a stakeholder-ready summary and prioritized action items.</li>
+    <li>Share day-to-day helpdesk ownership across NY and SF offices and remote employees; partner with People Operations and Workplace on onboarding and offboarding.</li>
+  </ul>
+
+  <div class="job-title">QUANTCAST &mdash; Senior IT Services Administrator <span class="date">(2021 &ndash; 2024)</span></div>
+  <ul>
+    <li>Owned identity provisioning and lifecycle management through Okta Workflows.</li>
+    <li>System owner and administrator of Jamf Pro for 1,000+ Apple endpoints with enforced security and compliance policy.</li>
+    <li>Onboarded Jamf Protect for fleet-wide macOS endpoint monitoring and security compliance.</li>
+    <li>Managed Jira Service Desk and Confluence with automation workflows and SLA dashboards.</li>
+    <li>Delivered deskside and executive support; maintained AV and conference-room readiness.</li>
+    <li>Automated provisioning via Jamf Pro and Okta Workflows, reducing manual effort by 80% and provisioning time by 60%.</li>
+    <li>Partnered with InfoSec to author compliance policies and analytics using Jamf Pro and Jamf Protect.</li>
+  </ul>
+
+  <div class="job-title">HYTORC &mdash; Senior Systems Administrator <span class="date">(2020 &ndash; 2021)</span></div>
+  <ul>
+    <li>Led an AirWatch to Microsoft 365 and Intune migration across the endpoint fleet.</li>
+    <li>Wrote automation scripts for patching, provisioning, and compliance.</li>
+    <li>Managed Intune, AirWatch, and Adaxes platforms for 600+ endpoints.</li>
+    <li>Delivered asset governance, SOPs, and onboarding support.</li>
+    <li>Created and maintained internal IT and end-user knowledge base articles for self-service.</li>
+  </ul>
+
+  <div class="job-title">QUANTCAST &mdash; Senior IT Services Administrator <span class="date">(2016 &ndash; 2020)</span></div>
+  <ul>
+    <li>Sole IT support for the NY office; supported 150+ users and executive AV meetings.</li>
+    <li>Acted as escalation point for NYC-region support issues.</li>
+    <li>Primary support for international office buildouts (Toronto, Dublin, Chicago).</li>
+    <li>Managed corporate telecom, hardware lifecycle, onboarding and offboarding.</li>
+  </ul>
+
+  <div class="job-title">HDR, INC. &mdash; Senior IT Support Specialist <span class="date">(2013 &ndash; 2016)</span></div>
+  <ul>
+    <li>On-site IT lead for 100+ engineers in a secure civil infrastructure environment.</li>
+    <li>Built AV systems, image deployments, and provisioning guides.</li>
+    <li>Trained engineering teams on troubleshooting and access protocols.</li>
+    <li>Maintained database integrity for project data, including backup and recovery.</li>
+  </ul>
+
+  <div class="job-title">Early Career Roles</div>
+  <ul>
+    <li>TIME, INC. &ndash; Desktop Support Specialist (2012 &ndash; 2013)</li>
+    <li>EILEEN FISHER &ndash; Mac / PC Support Specialist (2011 &ndash; 2012)</li>
+    <li>REGENERON PHARMACEUTICALS &ndash; IS Support Specialist II (2008 &ndash; 2011)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Okta Certified Administrator (Expected)</li>
+    <li>Jamf 200 (In Progress)</li>
+    <li>Certified Scrum Master (Renewing)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Skills &amp; Expertise</h2>
+  <div class="skills-grid">
+    <div><strong>Device Management:</strong> Jamf Pro, Jamf Protect, Microsoft Intune, Workspace One</div>
+    <div><strong>Identity &amp; Automation:</strong> Okta Workflows, Okta MCP/API tooling, Python, FastMCP, PowerShell, Ansible</div>
+    <div><strong>ITSM Tools:</strong> Jira (Admin), Confluence, Snipe-IT</div>
+    <div><strong>Collaboration:</strong> Zoom, MS Teams, Google Meet, Polycom, Slack</div>
+    <div><strong>OS / Infrastructure:</strong> Windows 11/10, macOS, Linux, Windows Server, Azure, Entra ID, Google Cloud Run</div>
   </div>
+</div>
 
-  <div class="section">
-    <h2>Professional Summary</h2>
-    <p>Senior Systems Administrator & IT Operations Engineer with 15+ years of experience designing, deploying, and optimizing enterprise IT infrastructures and endpoint security. Skilled in Jamf, Intune, Okta, Ansible, Terraform, and Docker. Proven in global rollouts, system migrations, and infrastructure automation.</p>
-  </div>
-
-  <div class="section">
-    <h2>Professional Achievements</h2>
-    <ul>
-      <li>Led IT projects that improved user technology, support workflows, and IT-business alignment.</li>
-      <li>Implemented a mobile device management solution at Quantcast for global Mac/iOS fleet.</li>
-      <li>Deployed full Endpoint Detection and Response system across macOS and Windows devices.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Professional Experience</h2>
-
-    <div class="job-title">QUANTCAST - Senior IT Services Administrator <span class="date">(2021 - 2024)</span></div>
-    <ul>
-      <li>Rolled out Jamf Pro/Protect to 1000+ devices, reducing deployment time by 50%.</li>
-      <li>Deployed hardware/software to 500+ users globally with Jamf and Workspace One.</li>
-      <li>Managed Linux patching using Terraform, Ansible, Docker, and Git.</li>
-      <li>Created automated Okta workflows for Jamf onboarding/offboarding.</li>
-      <li>Integrated analytics with Jamf Pro, Okta, and Jira to enhance threat visibility.</li>
-    </ul>
-
-    <div class="job-title">HYTORC - Senior Systems Administrator <span class="date">(2020 – 2021)</span></div>
-    <ul>
-      <li>Led physical/virtual server deployments, enhancing system reliability.</li>
-      <li>Deployed Office 365 and Intune MDM for 1000+ and 600+ users respectively.</li>
-      <li>Documented processes to improve support onboarding and workflows.</li>
-    </ul>
-
-    <div class="job-title">QUANTCAST - Senior IT Services Administrator <span class="date">(2016 - 2020)</span></div>
-    <ul>
-      <li>Executed IT system rollouts in US, Europe, and Australia.</li>
-      <li>Managed concurrent projects supporting business infrastructure needs.</li>
-      <li>Led A/V and security upgrades and mobile provisioning.</li>
-    </ul>
-
-    <div class="job-title">HDR, INC. - Senior IT Support Specialist <span class="date">(2013 - 2016)</span></div>
-    <ul>
-      <li>Provided IT support for 100+ users across multiple locations.</li>
-      <li>Managed hardware lifecycle for Tappan Zee Bridge design team.</li>
-      <li>Evaluated new technology and influenced purchasing standards.</li>
-    </ul>
-
-    <div class="job-title">Early Career Roles</div>
-    <ul>
-      <li>TIME, INC. – Desktop Support Specialist (2012 - 2013)</li>
-      <li>EILEEN FISHER – Mac / PC Support Specialist (2011 - 2012)</li>
-      <li>REGENERON PHARMACEUTICALS – IS Support Specialist II (2008 - 2011)</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Certified Scrum Master (Renewing)</li>
-      <li>Amazon Certified Cloud Practitioner (In Progress)</li>
-      <li>Jamf 200 (In Progress)</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Skills & Expertise</h2>
-    <div class="skills-grid">
-      <div><strong>Technical Expertise:</strong> Systems Administration, Systems Engineering, IT Analysis</div>
-      <div><strong>Tools & Platforms:</strong> Jamf, Intune, Okta, Office 365, Atlassian, Zoom</div>
-      <div><strong>Cloud & Infrastructure:</strong> Azure, Terraform, Docker, VMware</div>
-      <div><strong>Operating Systems:</strong> Windows, macOS, Linux</div>
-      <div><strong>Hardware:</strong> Dell, HP, Apple Devices</div>
-      <div><strong>Scripting & Automation:</strong> Bash, PowerShell, Git, Okta Workflows</div>
-    </div>
-  </div>
 </body>
 </html>
-
